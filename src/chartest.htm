@@ -1,0 +1,52 @@
+<HTML>
+<HEAD><TITLE>TeeChart Native ODBC Page</TITLE></HEAD>
+<BODY>
+<p>This page connects a Server located Chart to an ODBC datasource and 
+exports/imports the Chart to the browser located TChart where it can 
+be zoomed/scrolled.</p>
+<br>
+<SCRIPT Language="VBScript" RUNAT=Server>
+   SUB FillSave()
+	Dim TChart1
+	Set TChart1 = CreateObject("TeeChart.TChart")
+	TChart1.AddSeries(1)
+	TChart1.Series(0).ColorEachPoint = True
+	' Set NoPrompt mode to support ASP Connection Pooling
+        TChart1.Environment.NoPromptDBConnect = True
+        TChart1.Series(0).DataSource = "DSN=mrxp;UID=mrxp;PWD=mrxp1124; sql=SELECT * FROM TBE010"
+        TChart1.Series(0).LabelsSource = "MyNameColumn"
+        TChart1.Series(0).YValues.ValueSource = "MyValuesColumn"
+        TChart1.Series(0).CheckDatasource
+   	TChart1.Export.SaveToFile "c:\myChartdir\mychart.tee"
+   END SUB
+</SCRIPT>
+
+<!-- Call the FillSave() function -->
+<%FillSave%>
+<object 
+   id="TeeCommander1" 
+   width="500" 
+   height="32" 
+   type="application/x-oleobject" 
+   hspace="0"
+   vspace="0" 
+   classid="CLSID:CD82C85E-37B7-48E3-9E88-31E140C13C86">
+</object>
+<OBJECT classid="clsid:FAB9B41C-87D6-474D-AB7E-F07D78F2422E"
+  codebase="TeeChart7.ocx#version=7,0,0,0"
+  id=TChart1
+  TYPE="application/x-oleobject"
+  width=500
+  height=250
+  align=center
+  hspace=0
+  vspace=0
+  >
+</OBJECT>
+<SCRIPT Language="VBScript">
+  TChart1.Import.LoadFromURL( "http://localhost/chartest.tee" )
+  'where the above import folder directs to the save folder for the Chart
+  TeeCommander1.Chart=TChart1
+</SCRIPT>
+</BODY>
+</HTML>

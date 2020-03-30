@@ -1,0 +1,771 @@
+html, body { height:99.7%; padding: 0px; min-width: 1024px; overflow-y: visible; margin: 0px; font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;}
+a {  font-family: "Malgun Gothic", "Helvetica", "sans-serif"; font-size: 13pt; text-decoration: none}
+a:hover {  font-family: "Malgun Gothic", "Helvetica", "sans-serif"; font-size: 13pt;  text-decoration: underline}
+form { 
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+}
+.col_selected{background:red}
+.h-div {  width: 100%; height:100%; }
+
+.header-div { height:6%; padding: 0; margin: 0; vertical-align: middle; }
+.top-div { height:65%; padding: 0; margin: 0;}
+.bottom-div { height:29%; padding: 0; margin: 0; }
+.sale-info-title { width: 30%; text-align: center; align-content: center; font-size: 9pt; background: #EAEFD8; }
+.sale-info-title-bold { width: 30%; text-align: center; align-content: center; font-size: 9pt; font-weight: bold; background: #EAEFD8;}
+.sale-info-title-red { width: 30%; padding: 0; margin: 0; text-align: center; align-content: center; font-size: 9pt; font-weight: bold; color: red; background: #EAEFD8;}
+
+label { font-family: Malgun Gothic ,Arial, Helvetica, sans-serif; }
+button { font-family: Malgun Gothic ,Arial, Helvetica, sans-serif; }
+input { font-family: Malgun Gothic ,Arial, Helvetica, sans-serif; }
+
+.label {
+	align-content: center; border-width: 1px; border-color: red;
+}
+
+.input {
+	width: 98%; height: 95%; text-align: right; align-content: center;
+	font-size: 18px;
+}
+
+.half-input {
+	width: 45%; height: 95%; text-align: right; align-content: center;
+	font-size: 13.5pt;
+}
+
+.box {border:1 solid #333333; font-family:"Malgun Gothic", "Verdana"; FONT-SIZE: 9pt; background-color: #ffffff}
+
+.boxno {border:0  #ffffff; font-family:"Malgun Gothic", "Verdana"; FONT-SIZE: 9pt; background-color: #ffffff}
+.input-barcode {
+	/*
+	width: 98%; height:98%; text-align: left;			
+	font-size: 10pt;
+	ime-mode:disabled;
+	text-transform: uppercase;
+	*/
+	width: 60%; -height: 25px;
+	text-align: left;			
+	font-size: 10pt;
+	ime-mode:disabled;
+	text-transform: uppercase;
+	background: transparent;
+}
+/*
+.input-barcode:focus {
+	width: 98%; height:98%; text-align: left;
+	font-size: 10pt;
+	background: yellow;
+}
+*/
+.input-itemcd {
+	width: 100%; height: 30px; font-size: 12pt; font-weight: bold; 
+	ime-mode:disabled;
+	text-transform: uppercase;
+}
+
+.calc-btn {
+	width: 100%; height: 100%;
+	font-size: 15pt;
+	font-weight: bold;  
+	background: #E3E3E3;
+}
+
+.non-finish {
+	width: 100%; height: 100%; border: 1px solid black; border-radius: 7px; font-size: 15pt; text-align: center; background: #BDBDBD; 
+	background: -webkit-linear-gradient(#BDBDBD, #BDBDBD);
+	background: -o-linear-gradient(#BDBDBD, #BDBDBD);
+	background: linear-gradient(#BDBDBD, #BDBDBD);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#84FFFF', endColorstr='#2BA5BA');
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	text-decoration: none;
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+}
+
+.btn-search {
+	width: 80px; height: 36px;
+	vertical-align: middle;
+	cursor:pointer;
+	padding: auto; margin: auto; 
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_search.png');
+}
+
+.btn-search:active {	
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_search_active.png');
+}
+
+.btn-search-small {
+	width: 67px; height: 30px;
+	vertical-align: middle;
+	cursor:pointer;
+	padding: auto; margin: auto; 
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_search.png');
+	background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.btn-search-small:active {	
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_search_active.png');
+}
+
+.btn-new-custom {
+	width: 80px; height: 36px;
+	vertical-align: middle;
+	cursor:pointer;
+	padding: auto; margin: auto; 
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_new_cus.png');
+}
+
+.btn-new-custom:active {	
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_new_cus_active.png');
+}
+
+.btn-custom-cancel {
+	width: 100px; height: 36px;
+	padding: auto; margin: auto; 
+	vertical-align: middle;
+	cursor:pointer;
+	display: none;
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_cus_cancel.png');
+}
+
+.btn-custom-cancel:active {	
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_cus_cancel_active.png');
+}
+
+.btn-custom-edit {
+	width: 100px; height: 36px;
+	padding: auto; margin: auto; 
+	vertical-align: middle;
+	cursor:pointer;
+	display: none;
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_cus_edit.png');
+}
+
+.btn-custom-edit:active {	
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_cus_edit_active.png');
+}
+
+.btn_print_device {
+	width: 90px; height: 36px;
+	vertical-align: middle;
+	cursor:pointer;
+	padding: auto; margin: auto; 
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_print_device.png');
+	background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.btn_print_device:active {	
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_print_device_active.png');
+}
+
+.btn_print_device:disabled {	
+	width: 90px; height: 36px;
+	vertical-align: middle;
+	padding: auto; margin: auto; 
+	cursor:default;
+	border: none;
+	background-color: white;
+	background-color: rgba(255,255,255, 0);
+	background-image: url('/webpos/images/btn_print_device_disabled.png');
+	background-repeat:no-repeat;
+    background-size:contain;
+}
+.btn-reprint {
+	width: 75px; height: 30px;
+	vertical-align: middle;
+	padding: auto; margin: auto; 
+	cursor:pointer;
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_reprint.png');	
+	background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.btn-reprint:active {	
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_reprint_active.png');
+}
+
+.btn-reprint:disabled {	
+	vertical-align: middle;
+	padding: auto; margin: auto; 
+	cursor:default;
+	border: none;
+	background-color: white;
+	background-color: rgba(255,255,255, 0);
+	background-image: url('/webpos/images/btn_reprint_disabled.png');
+}
+
+.btn-cash-receipt {
+	width: 110px; height: 30px;
+	vertical-align: middle;
+	padding: auto; margin: auto; 
+	cursor:pointer;
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_cash_receipt.png');	
+	background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.btn-cash-receipt:active {	
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_cash_receipt_active.png');
+}
+
+.btn-cash-receipt:disabled {	
+	vertical-align: middle;
+	padding: auto; margin: auto; 
+	cursor:default;
+	border: none;
+	background-color: white;
+	background-color: rgba(255,255,255, 0);
+	background-image: url('/webpos/images/btn_cash_receipt_disabled.png');
+}
+
+.btn-resale {
+	width: 75px; height: 30px;
+	vertical-align: middle;
+	padding: auto; margin: auto; 
+	cursor:pointer;
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_resale.png');	
+	background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.btn-resale:active {	
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_resale_active.png');
+}
+
+.btn-resale:disabled {	
+	cursor:default;
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_resale_disabled.png');
+}
+
+.btn-receipt-cancel {
+	width: 120px; height: 30px;
+	vertical-align: middle;
+	padding: auto; margin: auto; 
+	cursor:pointer;
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_receipt_cancel.png');	
+	background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.btn-receipt-cancel:active {	
+	width: 120px; height: 30px;
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_receipt_cancel_active.png');
+	background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.btn-receipt-cancel:disabled {	
+	width: 120px; height: 30px;
+	cursor:default;
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_receipt_cancel_disabled.png');
+	background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.btn-cash-req {
+	width: 100px; height: 36px;
+	vertical-align: middle;
+	padding: auto; margin: auto; 
+	cursor:pointer;
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_cash_req.png');	
+}
+
+.btn-cash-req:active {	
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_cash_req_active.png');
+}
+
+.btn-cash-req:disabled {	
+	cursor:default;
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_cash_req_disabled.png');
+}
+/* 190306 jsys 수정 승인취소버튼 추가 */
+.btn-cash-req-cancel {
+	width: 100px; height: 36px;
+	vertical-align: middle;
+	padding: auto; margin: auto; 
+	cursor:pointer;
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_cash_req_cancel.png');	
+}
+
+.btn-cash-req-cancel:active {	
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_cash_req_cancel_active.png');
+}
+/* 190306 jsys 수정 승인취소버튼 추가 */
+.btn-excel {
+   width: 80px; height: 36px;
+   vertical-align: middle;
+   padding: auto; margin: auto; 
+   cursor:pointer;
+   border: none;
+   background-color: white;
+   background-image: url('/webpos/images/btn_excel.png');   
+}
+
+.btn-excel:active {   
+   border: none;
+   background-color: white;
+   background-image: url('/webpos/images/btn_excel_active.png');
+}
+
+.btn-print {
+   width: 80px; height: 36px;
+   vertical-align: middle;
+   padding: auto; margin: auto; 
+   cursor:pointer;
+   border: none;
+   background-color: white;
+   background-image: url('/webpos/images/btn_print.png');   
+}
+
+.btn-print:active {   
+   border: none;
+   background-color: white;
+   background-image: url('/webpos/images/btn_print_active.png');
+}
+
+.btn-save {
+	display: inline-block;
+	width: 80px; height: 36px;
+	vertical-align: middle;
+	padding: auto; margin: auto; 
+	cursor:pointer;
+	border: none;
+	background-repeat: no-repeat;
+	background-color: white;
+	background-image: url('/webpos/images/btn_save.png');	
+}
+.btn-save:active {	
+	border: none;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-image: url('/webpos/images/btn_save_active.png');
+}
+
+.btn-save:disabled {	
+	vertical-align: middle;
+	padding: auto; margin: auto; 
+	cursor:default;
+	border: none;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-color: rgba(255,255,255, 0);
+	background-image: url('/webpos/images/btn_save_active.png');
+}
+.btn-ok {
+	width: 80px; height: 36px;
+	vertical-align: middle;
+	padding: auto; margin: auto; 
+	cursor:pointer;
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_ok.png');	
+}
+
+.btn-ok:active {	
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_ok_active.png');
+}
+
+.btn-choice {
+	width: 80px; height: 36px;
+	vertical-align: middle;
+	padding: auto; margin: auto; 
+	cursor:pointer;
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_choice.png');	
+}
+
+.btn-choice:active {	
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_choice_active.png');
+}
+
+.btn-choice:disabled {	
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_choice_disabled.png');
+}
+
+.btn-close {
+	width: 80px; height: 36px;
+	vertical-align: middle;
+	padding: auto; margin: auto; 
+	cursor:pointer;
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_close.png');	
+}
+
+.btn-close:active {	
+	border: none;
+	background-color: white;
+	background-image: url('/webpos/images/btn_close_active.png');
+}
+
+/*
+.btn-search:hover {	
+	background-color: rgba(255,255,255, 0);
+	background-image: url('/webpos/images/search_hover.png');
+}
+*/
+a.btn-layerClose {
+	display: inline-block;
+	-height: 25px;
+	-padding: 0 14px 0;
+	-border: 1px solid #304a8a;
+	background-color: white;
+	width: 80px; height: 36px;
+	background-image: url('/sang/webpos/images/btn_close.png');   
+	vertical-align: middle;
+	padding: auto; margin: auto;
+	text-align: center;
+}
+
+a.btn-layerClose:active {
+	border: none;
+	background-color: white;
+	background-image: url('/sang/webpos/images/btn_close_active.png');
+}
+
+.sale-menu { 
+	width: 100%; height: 50px; border: 1px solid black; 	
+	font-size: 12pt; text-align: center; background: #417358; 
+	font-weight:bold;
+	color: white;
+	-border-radius: 7px; 
+	-background: -webkit-linear-gradient(#b8dc09, #2BA5BA);
+	-background: -o-linear-gradient(#b8dc09, #2BA5BA);
+	-background: linear-gradient(#b8dc09, #2BA5BA);
+	-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8dc09', endColorstr='#2BA5BA');
+	-text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	text-decoration: none;
+	--webkit-border-radius: .5em; 
+	--moz-border-radius: .5em;
+	-border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+}
+
+.bottom-menu { 
+	width: 100%; height: 100%; border: 1px solid black; 	
+	font-size: 14pt; text-align: center; background: #417358; 
+	color: white;
+	padding: 0;
+	margin: 0;
+	-border-radius: 7px; 
+	-background: -webkit-linear-gradient(#b8dc09, #2BA5BA);
+	-background: -o-linear-gradient(#b8dc09, #2BA5BA);
+	-background: linear-gradient(#b8dc09, #2BA5BA);
+	-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8dc09', endColorstr='#2BA5BA');
+	-text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	text-decoration: none;
+	--webkit-border-radius: .5em; 
+	--moz-border-radius: .5em;
+	-border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+}
+
+.bottom-menu:disabled { 
+	width: 100%; height: 100%; border: 1px solid gray; 	
+	font-size: 14pt; text-align: center; background: #BDBDBD; 
+	color: #757575;
+	-border-radius: 7px; 
+	-background: -webkit-linear-gradient(#b8dc09, #2BA5BA);
+	-background: -o-linear-gradient(#b8dc09, #2BA5BA);
+	-background: linear-gradient(#b8dc09, #2BA5BA);
+	-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8dc09', endColorstr='#2BA5BA');
+	-text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	text-decoration: none;
+	--webkit-border-radius: .5em; 
+	--moz-border-radius: .5em;
+	-border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+}
+
+.bottom-menu:disabled:hover { 
+	border-width: 1px; border-color: black; text-decoration: none;
+	background: #BDBDBD; 
+	color: #757575;
+	-background: -webkit-gradient(linear, left top, left bottom, from(#078196), to(#4FC9DE));
+	-background: -moz-linear-gradient(top,  #078196,  #4FC9DE);
+	-background: linear-gradient(top,  #078196,  #4FC9DE);
+	-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#078196', endColorstr='#4FC9DE');
+}
+
+.bottom-menu1 { 
+	width: 100%; height: 100%; border: 1px solid black; border-radius: 7px; font-size: 15pt; text-align: center; background: #b8dc09; 
+	background: -webkit-linear-gradient(#b8dc09, #2BA5BA);
+	background: -o-linear-gradient(#b8dc09, #2BA5BA);
+	background: linear-gradient(#b8dc09, #2BA5BA);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8dc09', endColorstr='#2BA5BA');
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	text-decoration: none;
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+}
+
+.bottom-menu:focus { 
+	border-width: 1px; border-color: #A2D683; text-decoration: none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#4FC9DE));
+	background: -moz-linear-gradient(top,  #000000,  #4FC9DE);
+	background: linear-gradient(top,  #000000,  #4FC9DE);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#4FC9DE');
+}
+
+
+.bottom-menu:hover { 
+	border-width: 1px; border-color: #A2D683; text-decoration: none;
+	background: #EAEAEA;
+	color: #A2D683;
+	-background: -webkit-gradient(linear, left top, left bottom, from(#078196), to(#4FC9DE));
+	-background: -moz-linear-gradient(top,  #078196,  #4FC9DE);
+	-background: linear-gradient(top,  #078196,  #4FC9DE);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#078196', endColorstr='#4FC9DE');
+}
+
+.bottom-menu-calc { 
+	width: 100%; height: 100%; border: 1px solid black; border-radius: 7px; font-size: 14pt; text-align: center; background: #FFA9EE; 
+	background: -webkit-linear-gradient(#FFA9EE, #F880FF);
+	background: -o-linear-gradient(#FFA9EE, #F880FF);
+	background: linear-gradient(#FFA9EE, #F880FF);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFA9EE', endColorstr='#F880FF');
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	text-decoration: none;
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+}
+
+.bottom-menu-calc:focus { 
+	border-width: 1px; border-color: darksalmon; text-decoration: none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#F361A6));
+	background: -moz-linear-gradient(top,  #000000,  #4FC9DE);
+	background: linear-gradient(top,  #000000,  #4FC9DE);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#F361A6');
+}
+
+
+.bottom-menu-calc:hover { 
+	border-width: 1px; border-color: darksalmon; text-decoration: none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#CF3D82), to(#F361A6));
+	background: -moz-linear-gradient(top,  #078196,  #4FC9DE);
+	background: linear-gradient(top,  #078196,  #4FC9DE);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#CF3D82', endColorstr='#F361A6');
+}
+
+
+/* Toggle Button */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.receipt-info-container {
+	width: 100%; height: 15%; position: relative; text-align: center; padding: auto; margin: auto;
+}
+
+.receipt-info-inner1 {
+	width: 20%; height: 100%; position: absolute; left: 0%; float: left; top: 0px; text-align: center;  border-right: 1px solid black;
+}
+
+.receipt-info-inner2 {
+	width: 20%; height: 100%; position: absolute; left: 20%; float: left; top: 0px; text-align: center;  border-right: 1px solid black;
+}
+
+.receipt-info-inner3 {
+	width: 20%; height: 100%; position: absolute; left: 40%; float: left; top: 0px; text-align: center;  border-right: 1px solid black;
+}
+
+.receipt-info-inner4 {
+	width: 20%; height: 100%; position: absolute; left: 60%; float: left; top: 0px; text-align: center;  border-right: 1px solid black;
+}
+
+.receipt-info-inner5 {
+	width: 20%; height: 100%; position: absolute; left: 80%; float: left; top: 0px; text-align: center;  border-right: 1px solid black;
+}
+
+.receipt-info-content-left {
+	width: 50%; position: relative; left: 0px; float: left; text-align: left; top: 3px;
+}
+
+.receipt-info-content-right {
+	width: 50%; position: relative; right: 9px; float: left; text-align: right; top: 3px;
+}
+
+.receipt-info-middle-title {
+	text-align: center; font-weight: bold; font-size: 9pt;
+}
+
+.receipt-info-middle-sub {
+	text-align: center; font-size: 9pt;
+}
+
+.f {
+	Font-size: 9pt;COLOR: #047879; TEXT-DECORATION: none
+}
+
+.orangeb{
+ Font-size: 9pt; Color: #ED9202; Line-height: 120%;Font-family: "돋움","Tahoma" ;font-weight:bold;  Text-decoration: None;
+}
+
+.btn_basic {
+	width:48px; height:30px;
+	vertical-align: middle;
+}
+.btn_basic1 {
+	width:100px; height:30px;
+	vertical-align: middle;
+}
+.btn_basic2 {
+	width:38px; height:30px;
+	vertical-align: middle;
+}

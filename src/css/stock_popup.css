@@ -1,0 +1,650 @@
+#jsGrid100, #jsGrid-sales1-1, #jsGrid-sales1-2,
+#jsGrid-sales2, #jsGrid-sales3, #jsGrid-sales4,
+#jsGrid-sales7, #jsGrid-sales10, #jsGrid-sales11,
+#jsGrid-sales14, #jsGrid-sales15{
+	border: 1px solid #6B6B6B;
+}
+
+.div-header-reg {
+	height: 10%;
+	align-content: center;
+}
+.div-body-reg {
+	height: 80%;
+}
+.div-footer-reg {
+	height: 10%;
+	text-align: center;
+	vertical-align: middle;
+	margin: 10px 0px 0px 0px;
+}
+
+.no-line{
+	text-decoration:none;
+}
+
+#div-container {
+	width: 550px;
+	height: 350px;
+	background-color: beige;
+	padding: 0px;
+	margin: 0px;                
+}
+
+#div-header {
+	height: 10%;
+	padding: 0px;
+	margin: 0px;
+	/*background-color: bisque;*/
+}
+
+#div-body {
+	height: 80%;
+	padding: 0px;
+	margin: 0px;
+}
+
+#div-footer {
+	height: 10%;
+	/*background-color: aqua;*/
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+#div-footer button {
+	width: 80px;
+	height: 56px;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 0px;
+	margin: 10px 10px 0px 0px;
+	text-align: center;
+}
+
+
+.main-body{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow:auto;
+  overflow-x:hidden;
+ 
+}
+.main-body .main-top{
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 40px;
+ 
+}
+.main-body td{
+	 background-color:'#fffff';
+	 
+	}
+@media (max-width: 300px) {
+    .main-body td{
+	  font-size:0.5em;
+	 
+	}
+}
+
+@media (min-width: 700px) {
+    .main-body td{
+	  font-size:0.6em;
+	 
+	}
+}
+
+@media (min-width: 900px) {
+    .main-body td{
+	  font-size:0.8em;
+	 
+	}
+}
+@media (min-width: 1200px) {
+    .main-body td{
+	  font-size:1em;
+	 
+	}
+}
+ 
+.main-body .main-middle1{
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  height: 70px;
+ 
+}
+.main-body .main-middle2{
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  height: 30px;
+ 
+}
+.main-body .main-middle1 input{
+ 
+  width: 100px;
+  height: 25px;
+ 
+}
+.main-body .body-diff{
+  position: absolute;
+  top: 170px;
+  width: 91%;
+  height: 80%;
+  left:5%;
+}
+.main-body .main-content{
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  overflow-y:scroll;
+}
+table.type01 {
+    border-collapse: collapse;
+    line-height: 1.5;
+}
+table.type01 tr {
+    font-weight: bold;
+    vertical-align: top;
+    border: 1px solid #ccc;
+}
+table.type01 tr:hover {
+   background-color: lightyellow;
+}
+table.type01 td {
+    vertical-align: top;
+    border: 1px solid #ccc;
+}
+
+.main-body .main-content1{
+  position: absolute;
+  top:90%;
+  width: 99%;
+  height: 10%;
+}
+/*재고실사*/
+.pop-stock {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  padding: 20px 36px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+  font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+}
+
+.pop-stock .div-header{
+	height: 5%;
+	font-weight: bold;
+	text-align: center;
+	font-size: 11pt;
+	padding: 0px;
+	margin: 0px;
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+	/*background-color: bisque;*/
+}
+
+.pop-stock .div-body{
+	width: 100%;
+	height: 90%;
+	padding: 0px;
+	margin: 0px;	
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+	/*overflow-y:scroll;*/
+}
+.pop-stock .div-body .sales13font{
+    width: 30%;
+	font-size:7pt; 
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+	text-align: right;
+	color:#345487;
+    float: left;
+}
+.pop-stock .div-body .valuefont{	
+    width: 70%;
+	font-size:8pt; 
+	font-weight: bold;
+	font-family: Malgun Gothic , Arial, Helvetica, sans-serif;
+	text-align: right;
+	color:#474747;
+    float: right;
+}
+
+
+
+.pop-stock .div-footer{
+	height: 5%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-stock .pop-container {
+	width: 100%;
+	height: 100%;	
+}
+
+.pop-stock p.ctxt {
+  color: #666;
+  line-height: 36px;
+}
+
+.pop-stock .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-stock {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.dim-stock .dimBg-stock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-stock .pop-stock {
+  display: block;
+}
+
+/*재고수정*/
+.pop-stockmodify {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 80%;
+  padding: 20px 36px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-stockmodify .div-header{
+	height: 10%;
+	font-weight: bold;
+	text-align: center;
+	font-size: 15pt;
+	padding: 0px;
+	margin: 0px;
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+	/*background-color: bisque;*/
+}
+
+.pop-stockmodify .div-body{
+	width: 100%;
+	height: 80%;
+	padding: 0px;
+	margin: 0px;	
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+}
+
+.pop-stockmodify .div-body input{
+	width: 100px;
+	height:25px;
+	font-size:9pt;
+	text-align: center;
+}
+.pop-stockmodify .div-body select{
+	font-size:9pt;
+	height:36px;
+	text-align: center;
+}
+.pop-stockmodify .div-body td{
+	font-size:9pt;
+}
+.pop-stockmodify .div-footer{
+	height: 10%;
+	/*background-color: aqua;*/
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-stockmodify .pop-container {
+	width: 100%;
+	height: 100%;	
+}
+
+.pop-stockmodify p.ctxt {
+  color: #666;
+  line-height: 36px;
+}
+
+.pop-stockmodify .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-stockmodify {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.dim-stockmodify .dimBg-stockmodify {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-stockmodify .pop-stockmodify {
+  display: block;
+}
+
+/*재고실사*/
+.pop-stocksearch {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 80%;
+  padding: 20px 36px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-stocksearch .div-header{
+	height: 10%;
+	font-weight: bold;
+	text-align: center;
+	font-size: 15pt;
+	padding: 0px;
+	margin: 0px;
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+	/*background-color: bisque;*/
+}
+
+.pop-stocksearch .div-body{
+	width: 100%;
+	height: 80%;
+	padding: 0px;
+	margin: 0px;	
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+}
+
+.pop-stocksearch .div-body input{
+	width: 100px;
+	height:36px;
+	font-size:9pt;
+	text-align: center;
+}
+.pop-stocksearch .div-body select{
+	font-size:9pt;
+	height:36px;
+	text-align: center;
+}
+.pop-stocksearch .div-body td{
+	font-size:9pt;
+}
+.pop-stocksearch .div-footer{
+	height: 10%;
+	/*background-color: aqua;*/
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-stocksearch .pop-container {
+	width: 100%;
+	height: 100%;	
+}
+
+.pop-stocksearch p.ctxt {
+  color: #666;
+  line-height: 36px;
+}
+
+.pop-stocksearch .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-stocksearch {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.dim-stocksearch .dimBg-stocksearch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-stocksearch .pop-stocksearch {
+  display: block;
+}
+/* 집계조회 */
+.pop-layer100 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 80%;
+  padding: 20px 36px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+  font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+}
+
+.pop-layer100 .div-header{
+	height: 10%;
+	font-weight: bold;
+	text-align: center;
+	font-size: 14pt;
+	padding: 0px;
+	margin: 0px;
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+	/*background-color: bisque;*/
+}
+
+.pop-layer100 .div-body{
+	width: 100%;
+	height: 80%;
+	padding: 0px;
+	margin: 0px;
+}
+.pop-layer100 .div-body input{
+	font-size:8pt;
+	width: 90px;
+	height:30px;
+	vertical-align:middle;
+	text-align: center;
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+}
+.pop-layer100 .div-body select{
+	font-size:8pt;
+	width:95px;
+	height:30px;
+	text-align: center;
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+}
+.pop-layer100 .div-body td{
+	font-size: 9pt;
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+	
+}
+.layer100_label{
+	font-size:9pt;
+	text-align: right;
+	font-weight:bold;
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+}
+.pop-layer100 .div-footer{
+	height: 5%;
+	/*background-color: aqua;*/
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer100 .pop-container {
+	width: 100%;
+	height: 100%;	
+}
+
+.pop-layer100 p.ctxt {
+  color: #666;
+  line-height: 36px;
+}
+
+.pop-layer100 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer100 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.dim-layer100 .dimBg100 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer100 .pop-layer100 {
+  display: block;
+}
+
+
+/*div*/
+#demoparagraph {
+width:700px;
+-webkit-column-count: 2;
+-moz-column-count: 2;
+column-count: 2;
+-webkit-column-gap: 7px;
+-moz-column-gap: 7px;
+column-gap: 7px;
+-webkit-column-rule: 2px solid #A4A4A4;
+-moz-column-rule: 2px solid #A4A4A4;
+column-rule: 2px solid #A4A4A4;
+margin:auto;
+text-align:center;
+}
+
+/* DivTable.com */
+.divTable{
+	display: table;
+	width: 100%;
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 9pt;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	color: #6B6B6B;
+}
+.divTableRow {
+	display: table-row;	
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+}
+
+.divTableRow input{
+	text-align:right;
+	width:100%;
+	font-family: Malgun Gothic ,Arial, Helvetica, sans-serif;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	display: table-cell;
+	padding: 3px 3px;
+	text-align:right;
+}
+.divTableCell_center {
+	width: 110px;
+	height:25px;
+	display: table-cell;
+	padding: 3px 3px;
+	text-align:right;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}

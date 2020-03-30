@@ -1,0 +1,101 @@
+(function(jsGrid, $, undefined) {
+
+    var TextField = jsGrid.TextField;
+
+    function NumberField(config) {
+        TextField.call(this, config);
+    }
+
+    NumberField.prototype = new TextField({
+
+        sorter: "number",
+        align: "right",
+		readOnly: false,
+
+        filterValue: function() {
+            return this.filterControl.val()
+                ? parseInt(this.filterControl.val() || 0, 10)
+                : undefined;
+        },
+
+        insertValue: function() {
+            return this.insertControl.val()
+                ? parseInt(this.insertControl.val() || 0, 10)
+                : undefined;
+        },
+
+		editTemplate: function(value) {
+			if(!this.editing)
+				return this.itemTemplate.apply(this, arguments);
+
+			//value = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+			if(this.readOnly) {
+				var $result = this.editControl = this._createLabel(value);
+				
+				$result.val(value);
+				/*
+				$result.on("keydown", function(e) {
+					if(e.which === 13) {
+						$("#jsGrid").jsGrid("updateItem");
+						setSIPRICE();
+						$('#input_barcode').focus();
+						return false;
+					}
+				});
+				*/
+				//$('#input_barcode').focus();
+				return $result;
+			} else {
+				var $result = this.editControl = this._createTextBox();
+				$result.val(value);
+				/*
+				$result.on("keydown", function(e) {
+					if(e.which === 13) {
+						$("#jsGrid").jsGrid("updateItem");
+						//setSIPRICE();
+						updateItems();
+						$('#input_barcode').focus();
+					}
+				});
+				*/
+				$result.on("click", function() {
+					setWorkType(2);
+					this.select();
+					setInput(this);
+					var temp = value.toString();
+					if(temp.length > 0) {
+						clear_flag = true;
+					}
+					//var $row = $("#jsGrid").jsGrid("rowByItem", item);
+					//var client = $("#jsGrid")._getEditRow();
+
+
+					// edit row by item reference
+					//var client = $("#jsGrid").jsGrid("editItem", item);
+					//currentRow(client);
+				});
+				return $result;
+			}			
+        },
+
+        editValue: function() {
+            return this.editControl.val()
+                ? parseInt(this.editControl.val() || 0, 10)
+                : undefined;
+        },
+
+        _createTextBox: function() {
+			return $("<input>").attr("type", "number")
+                .prop("readonly", !!this.readOnly);
+        },
+
+		_createLabel: function(value) {
+			//value = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			return $("<label>").text(value);
+		}
+    });
+
+    jsGrid.fields.number = jsGrid.NumberField = NumberField;
+
+}(jsGrid, jQuery));

@@ -1,0 +1,385 @@
+// realTime function
+setInterval("dpTime()",1000);
+setInterval("session_refresh()", 600000);
+var week = new Array('일', '월', '화', '수', '목', '금', '토');
+
+function init() {
+
+
+
+	var now = new Date();
+    year = now.getFullYear();
+    month = now.getMonth() + 1;
+    day = now.getDate();
+
+	if (month < 10) {
+        month = "0" + month;
+    }
+
+    if (day < 10) {
+        day = "0" + day;
+    }
+
+	firstday = String(year) + String(month) + "01";
+	salday = String(year) + String(month) + String(day);
+
+	var pickerStyle = {
+		dateFormat: 'yy-mm-dd',
+		prevText: '이전 달',
+		nextText: '다음 달',
+		monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+		monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+		dayNames: ['일','월','화','수','목','금','토'],
+		dayNamesShort: ['일','월','화','수','목','금','토'],
+		dayNamesMin: ['일','월','화','수','목','금','토'],
+		showMonthAfterYear: true,
+		changeMonth: true,
+		changeYear: true,
+		yearSuffix: '년'
+	}
+
+	$( "#datepicker").datepicker(pickerStyle);
+	$( "#input_receipt_picker").datepicker(pickerStyle);
+	$( "#dp_cash").datepicker(pickerStyle);
+	$('#dp_return_from').datepicker(pickerStyle);
+	$('#dp_return_to').datepicker(pickerStyle);
+
+
+
+
+	//매출현황-브랜드별
+	$( "#sales2-from" ).datepicker(pickerStyle);
+	$( "#sales2-from" ).val(getDaysAgo(30));
+	$( "#sales2-to" ).datepicker(pickerStyle);
+	$( "#sales2-to" ).val(getDay());
+
+	//매출현황-브랜드별
+	$( "#stock_date" ).datepicker(pickerStyle);
+	$( "#stock_date" ).val(getDay());
+
+	$( "#return-from" ).datepicker(pickerStyle);
+	$( "#return-from" ).val(getDaysAgo(15));
+	$( "#return-to" ).datepicker(pickerStyle);
+	$( "#return-to" ).val(getDay());
+
+	$( "#return_date" ).datepicker(pickerStyle);
+	$( "#return_date" ).val(getDay());
+
+
+	$( "#confirm-from" ).datepicker(pickerStyle);
+	$( "#confirm-from" ).val();
+	$( "#confirm-to" ).datepicker(pickerStyle);
+	$( "#confirm-to" ).val();
+
+	$( "#search-from" ).datepicker(pickerStyle);
+	$( "#search-from" ).val();
+	$( "#search-to" ).datepicker(pickerStyle);
+	$( "#search-to" ).val();
+
+
+	$( "#select-from" ).datepicker(pickerStyle);
+	$( "#select-from" ).val(getDay());
+	$( "#select-to" ).datepicker(pickerStyle);
+	$( "#select-to" ).val(getDay());
+
+
+	$( "#s-confirm-from" ).datepicker(pickerStyle);
+	$( "#s-confirm-from" ).val();
+	$( "#s-confirm-to" ).datepicker(pickerStyle);
+	$( "#s-confirm-to" ).val();
+
+
+	$( "#silsadt-from" ).datepicker(pickerStyle);
+	$( "#silsadt-from" ).val();
+	$( "#silsadt-to" ).datepicker(pickerStyle);
+	$( "#silsadt-to" ).val();
+}
+
+/*
+/* 3자리 콤마 */
+function numberWithCommas(x) {
+	if (x == null || x == "null" || x == "") {
+		return "0";
+	}
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+/* 숫자 문자열 정규식 */
+function is_number(x) {
+    var reg = /^\d+$/;
+
+    return reg.test(x);
+}
+
+function dpTime(){
+
+    //var week = new Array('일', '월', '화', '수', '목', '금', '토');
+
+    var now = new Date();
+    year = now.getFullYear();
+    month = now.getMonth() + 1;
+    day = now.getDate();
+    hours = now.getHours();
+    minutes = now.getMinutes();
+    seconds = now.getSeconds();
+
+    today = now.getDay();
+    todayLabel = week[today];
+
+    if (hours > 12) {
+        //hours -= 12;
+        ampm = "오후 ";
+    } else{
+        ampm = "오전 ";
+    }
+
+    if (month < 10) {
+        month = "0" + month;
+    }
+
+    if (day < 10) {
+        day = "0" + day;
+    }
+
+    /*
+    if (hours < 10) {
+        hours = "0" + hours;
+    }
+    */
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+
+    //document.getElementById("dpTime").innerHTML = year + "-" + month + "-" + day + " " + hours + ":" + minutes + ":" + seconds + " " + todayLabel;
+}
+
+function getDate() {
+	var now = new Date();
+    year = now.getFullYear();
+    month = now.getMonth() + 1;
+    day = now.getDate();
+    hours = now.getHours();
+    minutes = now.getMinutes();
+    seconds = now.getSeconds();
+
+    if (month < 10) {
+        month = "0" + month;
+    }
+
+    if (day < 10) {
+        day = "0" + day;
+    }
+
+    /*
+    if (hours < 10) {
+        hours = "0" + hours;
+    }
+    */
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+
+	return year + "-" + month + "-" + day + " " + hours + ":" + minutes + ":" + seconds;
+}
+
+function getDay() {
+	var now = new Date();
+    year = now.getFullYear();
+    month = now.getMonth() + 1;
+    day = now.getDate();
+
+    if (month < 10) {
+        month = "0" + month;
+    }
+
+    if (day < 10) {
+        day = "0" + day;
+    }
+	return year + "-" + month + "-" + day;
+}
+function getDaysAgo(daysago){ // 지정한 날짜 만큼 이전의 날짜를 보여 준다.
+    var toDay = new Date();
+    var makeDay = new Date(toDay-(3600000*24*daysago));
+
+    var Year = makeDay.getFullYear();
+    var Month = makeDay.getMonth() + 1;
+    var Day = makeDay.getDate();
+
+    var makeDay = Year +"-"+ LNG_Date(Month) +"-"+ LNG_Date(Day);
+    return makeDay;
+}
+function LNG_Date(obj) { // 월, 일이 한 자리 일 경우 0을 붙여 준다.
+    var str = String (obj);
+
+    if (str.length == 1) {
+        str = "0" + str;
+    }else{
+        str = str;
+    }
+
+    return str;
+}
+
+
+
+function getLastYear() {
+	var now = new Date();
+	var yearDate = now.getTime() - (365 * 24 * 60 * 60 * 1000);
+	now.setTime(yearDate);
+
+	var year = now.getFullYear();
+	var month = now.getMonth() + 1;
+	var day = now.getDate();
+
+	if (month < 10){ month = "0" + month; }
+	if (day < 10){ day = "0" + day; }
+
+	return year + "-" + month + "-" + day;
+}
+
+function getTime() {
+	var now = new Date();
+    hours = now.getHours();
+    minutes = now.getMinutes();
+    seconds = now.getSeconds();
+
+
+    if (hours < 10) {
+        hours = "0" + hours;
+    }
+
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+
+	return String(hours) + String(minutes) + String(seconds);
+}
+
+
+
+function toggleFullScreen() {
+  if (!document.fullscreenElement &&    // alternative standard method
+      !document.mozFullScreenElement && !document.webkitFullscreenElement) {  // current working methods
+    if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen();
+    } else if (document.documentElement.mozRequestFullScreen) {
+      document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullscreen) {
+      document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+  } else {
+    if (document.cancelFullScreen) {
+      document.cancelFullScreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.webkitCancelFullScreen) {
+      document.webkitCancelFullScreen();
+    }
+  }
+}
+
+
+
+
+
+
+
+
+function session_refresh() {
+	var promise = $.ajax({
+			url: "./session_refresh.asp",
+			type: "POST",
+			contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+			datatype: 'json',
+			cache: false
+	});
+	promise.done(function(data) {
+		//alert("done : " + data);
+		session_check(data);
+		var jObject = JSON.parse(data);
+		console.log("session_refresh() | " + data);
+		if (jObject.error == "0" && jObject.REFRESH == "S") {
+			console.log("===================================== session_refresh");
+		}
+	});
+	promise.fail(function(data) {
+		alert("session_refresh fail : " + data);
+	});
+}
+
+function session_check(data) {
+	if (data == "<script>top.location.href='/stime_out.asp'</script>") {
+		alert("다시 로그인해주세요.");
+		opener.closed_refresh();
+		window.close();
+	} else if (data == "\r\n\r\n<script language=\"javascript\">\r\nalert(\"로그아웃되었습니다.\\n다시로그인해주세요.\");\r\n\r\nparent.window.location = \"../default.asp\";\r\n</script>") {
+		alert("다시 로그인해주세요.");
+		opener.closed_refresh();
+		window.close();
+	}
+}
+
+
+
+
+
+
+/* Data 조회중 안내 팝업 */
+function searching_open() {
+	var $el = $("#layer000");
+	$('.dim-layer000').fadeIn();
+	var $elWidth = ~~($el.outerWidth()),
+		$elHeight = ~~($el.outerHeight()),
+		docWidth = $(document).width(),
+		docHeight = $(document).height();
+
+	// 화면의 중앙에 레이어를 띄운다.
+	if ($elHeight < docHeight || $elWidth < docWidth) {
+		$el.css({
+			marginTop: -$elHeight /2,
+			marginLeft: -$elWidth/2
+		})
+	} else {
+		$el.css({top: 0, left: 0});
+	}
+}
+
+function searching_close() {
+	$('.dim-layer000').fadeOut();
+}
+
+/* Data 저장 안내 팝업 */
+function save_open() {
+	var $el = $("#layer001");
+	$('.dim-layer001').fadeIn();
+	var $elWidth = ~~($el.outerWidth()),
+		$elHeight = ~~($el.outerHeight()),
+		docWidth = $(document).width(),
+		docHeight = $(document).height();
+
+	// 화면의 중앙에 레이어를 띄운다.
+	if ($elHeight < docHeight || $elWidth < docWidth) {
+		$el.css({
+			marginTop: -$elHeight /2,
+			marginLeft: -$elWidth/2
+		})
+	} else {
+		$el.css({top: 0, left: 0});
+	}
+}
+
+function save_close() {
+	$('.dim-layer001').fadeOut();
+}

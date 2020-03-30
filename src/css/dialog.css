@@ -1,0 +1,39 @@
+#dialog {
+    width: 320px;
+    height: 128px;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+
+#dlg-header {
+    height: 30%;
+    background-color: white;
+    color: #009688;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 10px 10px 0px 10px;
+}
+
+#dlg-body {
+    height: 40%;
+    color: #009688;
+    padding: 0px;
+    margin: 0px 10px 0px 10px;
+}
+
+#dlg-footer {
+    height: 30%;
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    margin: 0px 10px 10px 10px;
+}
+
+#dlg-footer button {
+    width: 96px;
+    height: 48px;
+    align-content: center;
+    font-weight: bold;
+}

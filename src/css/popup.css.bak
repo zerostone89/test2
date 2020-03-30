@@ -1,0 +1,2212 @@
+#jsGrid2, #jsGrid2-2, #jsGrid3,
+#jsGrid5-1, #jsGrid5-2, 
+#jsGrid6-1, #jsGrid6-2, #jsGrid8, 
+#jsGrid9, #jsGrid10-1, #jsGrid10-2{
+	border: 1px solid #6B6B6B;
+}
+
+.div-header-reg {
+	height: 10%;
+	align-content: center;
+}
+.div-body-reg {
+	height: 80%;
+}
+.div-footer-reg {
+	height: 10%;
+	text-align: center;
+	vertical-align: middle;
+	margin: 10px 0px 0px 0px;
+}
+
+#div-container {
+	width: 550px;
+	height: 350px;
+	background-color: beige;
+	padding: 0px;
+	margin: 0px;                
+}
+
+#div-header {
+	height: 10%;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+#div-body {
+	height: 80%;
+	padding: 0px;
+	margin: 0px;
+}
+
+#div-footer {
+	height: 10%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+#div-footer button {
+	width: 80px;
+	height: 56px;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 0px;
+	margin: 10px 10px 0px 0px;
+	text-align: center;
+}
+
+.pop-layer99 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 150px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer99 .pop-container{
+	height: 80%;
+	padding: 20px 25px;
+}
+
+.pop-layer99 .div-header{
+	height: 25%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer99 .div-body{
+	height: 50%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer99 .div-footer{
+	height: 25%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer99 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer99 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer99 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer99 .dimBg99 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer99 .pop-layer99 {
+  display: block;
+}
+
+/* 결제중 */
+.pop-layer999 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 150px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer999 .pop-container{
+	padding: 20px 25px;
+}
+
+.pop-layer999 .div-header{
+	height: 25%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer999 .div-body{
+	height: 50%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer999 .div-footer{
+	height: 25%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer999 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer999 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer999 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer999 .dimBg999 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer999 .pop-layer999 {
+  display: block;
+}
+
+/* 조회중 */
+.pop-layer000 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 150px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer000 .pop-container{
+	padding: 20px 25px;
+}
+
+.pop-layer000 .div-header{
+	height: 25%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer000 .div-body{
+	height: 50%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer000 .div-footer{
+	height: 25%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer000 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer000 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer000 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer000 .dimBg000 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer000 .pop-layer000 {
+  display: block;
+}
+
+
+
+/* 저장중 */
+.pop-layer000 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 150px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer000 .pop-container{
+	padding: 20px 25px;
+}
+
+.pop-layer000 .div-header{
+	height: 25%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer000 .div-body{
+	height: 50%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer000 .div-footer{
+	height: 25%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer000 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer000 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer000 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer000 .dimBg000 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer000 .pop-layer000 {
+  display: block;
+}
+
+
+.div-footer button {
+	width: 80px;
+	height: 56px;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 0px;
+	margin: 10px 10px 0px 0px;
+	text-align: center;
+}
+
+.div-container {
+	width: 550px;
+	height: 350px;
+	background-color: beige;
+	padding: 0px;
+	margin: 0px;                
+}
+
+.pop-layer {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 550px;
+  height: auto;
+  background-color: #fff;  
+  padding: 20px 25px;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer .div-header{
+	height: 10%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer .div-body{
+	height: 80%;
+}
+
+.pop-layer .div-footer{
+	height: 10%;
+	text-align: center;
+	vertical-align: middle;
+	margin: 10px 0px 0px 0px;
+}
+
+.pop-layer .pop-container {
+	width: 100%:
+	height: 100%;	
+}
+
+.pop-layer p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer .dimBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer .pop-layer {
+  display: block;
+}
+
+a.btn-layerSave {
+  display: inline-block;
+  height: 25px;
+  padding: 0 14px 0;
+  border: 1px solid #304a8a;
+  background-color: #3f5a9d;
+  font-size: 13px;
+  color: #fff;
+  line-height: 25px;
+  text-align: center;
+}
+
+a.btn-layerSave:hover {
+  border: 1px solid #091940;
+  background-color: #1f326a;
+  color: #fff;
+}
+
+a.btn-layerClose {
+	display: inline-block;
+	-height: 25px;
+	-padding: 0 14px 0;
+	-border: 1px solid #304a8a;
+	background-color: white;
+	width: 80px; height: 36px;
+	background-image: url('/sang/webpos/images/btn_close.png');   
+	vertical-align: middle;
+	padding: auto; margin: auto;
+	text-align: center;
+}
+
+a.btn-layerClose:active {
+	border: none;
+	background-color: white;
+	background-image: url('/sang/webpos/images/btn_close_active.png');
+}
+
+.pop-layer2 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 300px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer2 .div-header{
+	height: 10%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer2 .div-body{
+	height: 80%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer2 .div-footer{
+	height: 10%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer2 .pop-container{
+	width: 100%;
+	height: 100%;
+}
+
+.pop-layer2 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer2 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer2 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.dim-layer2 .dimBg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer2 .pop-layer2 {
+  display: block;
+}
+
+/* 고객리스트 */
+.pop-layer3 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 650px;
+  height: 400px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer3 .div-header{
+	height: 10%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer3 .div-body{
+	height: 80%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer3 .div-footer{
+	height: 10%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer3 .pop-container {
+	width: 100%;
+	height: 100%;	
+}
+
+.pop-layer3 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer3 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer3 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer3 .dimBg3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer3 .pop-layer3 {
+  display: block;
+}
+
+/* 통합고객리스트 */
+.pop-layer3-2 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 650px;
+  height: 400px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer3-2 .div-header{
+	height: 10%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer3-2 .div-body{
+	height: 80%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer3-2 .div-footer{
+	height: 10%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer3-2 .pop-container {
+	width: 100%;
+	height: 100%;	
+}
+
+.pop-layer3-2 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer3-2 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer3-2 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer3-2 .dimBg3-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer3-2 .pop-layer3-2 {
+  display: block;
+}
+
+.pop-layer4 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 550px;
+  height: 480px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer4 .pop-container{
+	height: 450px;
+	padding: 20px 25px;
+}
+
+.pop-layer4 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer4 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+
+
+.pop-layer4 .div-header{
+	height: 10%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer4 .div-body{
+	height: 80%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer4 .div-footer{
+	height: 10%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.dim-layer4 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer4 .dimBg4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer4 .pop-layer4 {
+  display: block;
+}
+
+/* 신마일리지 팝업 */
+.pop-layer5 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 850px;
+  height: 650px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer5 .pop-container{
+	width: 100%;
+	height: 100%;	
+}
+
+.pop-layer5 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer5 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+
+
+.pop-layer5 .div-header{
+	height: 7%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer5 .div-body{
+	height: 86%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer5 .div-footer{
+	height: 7%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.dim-layer5 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer5 .dimBg5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer5 .pop-layer5 {
+  display: block;
+}
+
+/* 인증할인쿠폰 팝업 */
+.pop-layer6 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 850px;
+  height: 650px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer6 .pop-container{
+	width: 100%;
+	height: 100%;	
+}
+
+.pop-layer6 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer6 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+
+
+.pop-layer6 .div-header{
+	height: 10%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer6 .div-body{
+	height: 80%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer6 .div-footer{
+	height: 10%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.dim-layer6 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer6 .dimBg6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer6 .pop-layer6 {
+  display: block;
+}
+
+
+/* 전체%할인 */
+.pop-layer7 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: auto;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer7 .pop-container{
+  padding: 20px 25px;
+}
+
+.pop-layer7 .div-header{
+	height: 30%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer7 .div-body{
+	height: 40%;
+	min-height: 48px;
+	text-align: center;
+	padding: 0px;	
+	margin: 5px 0px 5px 0px;
+}
+
+.pop-layer7 .div-body #input_all_dc{
+	width: 98%;
+	height: 100%;
+	min-height: 48px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15pt;
+}
+
+.pop-layer7 .div-body .btn-layerSave{
+	font-weight: bold;
+	font-size: 15pt;	
+}
+
+.pop-layer7 .div-footer{
+	height: 30%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer7 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer7 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer7 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer7 .dimBg7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer7 .pop-layer7 {
+  display: block;
+}
+
+/* 보류 */
+.pop-layer8 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  height: 400px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer8 .div-header{
+	height: 10%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer8 .div-body{
+	height: 80%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer8 .div-footer{
+	height: 10%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer8 .pop-container {
+	width: 100%;
+	height: 100%;
+	
+}
+
+.pop-layer8 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer8 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer8 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer8 .dimBg8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer8 .pop-layer8 {
+  display: block;
+}
+
+/* 단가조회 */
+.pop-layer9 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  height: 70%;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer9 .div-header{
+	height: 10%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer9 .div-body{
+	width: 100%;
+	height: 80%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer9 .div-footer{
+	height: 10%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer9 .pop-container {
+	width: 100%;
+	height: 100%;
+}
+
+.pop-layer9 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer9 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer9 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer9 .dimBg9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer9 .pop-layer9 {
+  display: block;
+}
+
+/* 영수증조회 */
+.pop-layer10 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer10 .div-header{
+	height: 4%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer10 .div-body{
+	width: 100%;
+	height: 92%;
+	padding: 0px;
+	margin: 0px;
+	-border: 1px solid #78909C;
+}
+
+.pop-layer10 .div-footer{
+	height: 4%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer10 .pop-container {
+	width: 100%;
+	height: 100%;	
+}
+
+.pop-layer10 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer10 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer10 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.dim-layer10 .dimBg10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer10 .pop-layer10 {
+  display: block;
+}
+
+/* 매장할인 */
+.pop-layer11 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 150px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer11 .pop-container{
+	width: 100%;
+	height: 100%;
+}
+
+.pop-layer11 .div-header{
+	height: 15%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer11 .div-body{
+	height: 70%;
+	min-height: 48px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0px;	
+	margin: 5px 0px 5px 0px;
+}
+
+.pop-layer11 .div-body .btn-layerSave{
+	font-weight: bold;
+	font-size: 15pt;	
+}
+
+.pop-layer11 .div-footer{
+	height: 15%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer11 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer11 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer11 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer11 .dimBg11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer11 .pop-layer11 {
+  display: block;
+}
+
+/* 카드결제 할부개월 */
+.pop-layer12 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 120px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer12 .pop-container{
+	width: 100%;
+	height: 100%;
+}
+
+.pop-layer12 .div-header{
+	height: 20%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer12 .div-body{
+	height: 60%;
+	text-align: center;
+	vertical-align: center;
+	padding: 0px;	
+	margin: 0px;
+}
+
+.pop-layer12 .div-body .btn-layerSave{
+	font-weight: bold;
+	font-size: 15pt;	
+}
+
+.pop-layer12 .div-footer{
+	height: 25%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer12 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer12 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer12 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer12 .dimBg12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer12 .pop-layer12 {
+  display: block;
+}
+
+/* 현금영수증 */
+.pop-layer13 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 350px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer13 .pop-container{
+	width: 100%;
+	height: 100%;
+}
+
+.pop-layer13 .div-header{
+	height: 15%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer13 .div-body{
+	height: 70%;
+	min-height: 48px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0px;	
+	margin: 5px 0px 5px 0px;
+}
+
+.pop-layer13 .div-body .btn-layerSave{
+	font-weight: bold;
+	font-size: 15pt;	
+}
+
+.pop-layer13 .div-footer{
+	height: 15%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer13 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer13 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer13 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.dim-layer13 .dimBg13 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer13 .pop-layer13 {
+  display: block;
+}
+
+/*카드취소*/
+.pop-layer14 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 300px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer14 .div-header{
+	height: 10%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer14 .div-body{
+	height: 80%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer14 .div-body input{
+	width: 150px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer14 .div-footer{
+	height: 10%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer14 .pop-container{
+	width: 100%;
+	height: 100%;
+}
+
+.pop-layer14 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer14 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer14 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.dim-layer14 .dimBg14 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer14 .pop-layer14 {
+  display: block;
+}
+
+/*현금취소*/
+.pop-layer15 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 300px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer15 .div-header{
+	height: 10%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer15 .div-body{
+	height: 80%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer15 .div-body input{
+	width: 150px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer15 .div-footer{
+	height: 10%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer15 .pop-container{
+	width: 100%;
+	height: 100%;
+}
+
+.pop-layer15 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer15 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer15 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.dim-layer15 .dimBg15 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer15 .pop-layer15 {
+  display: block;
+}
+
+/*단말기 승인 저장*/
+.pop-layer16 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 300px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer16 .div-header{
+	height: 10%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer16 .div-body{
+	height: 80%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer16 .div-body input{
+	width: 150px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer16 .div-footer{
+	height: 10%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer16 .pop-container{
+	width: 100%;
+	height: 100%;
+}
+
+.pop-layer16 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer16 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer16 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.dim-layer16 .dimBg16 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer16 .pop-layer16 {
+  display: block;
+}
+
+/* MILGU 할인권 DC율 */
+.pop-layer17 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: auto;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer17 .pop-container{
+	width: 100%;
+	height: 100%;
+}
+
+.pop-layer17 .div-header{
+	height: 30%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer17 .div-body{
+	height: 40%;
+	min-height: 48px;
+	text-align: center;
+	padding: 0px;	
+	margin: 5px 0px 5px 0px;
+}
+
+.pop-layer17 .div-body #input_milgu_dc{
+	width: 98%;
+	height: 100%;
+	min-height: 48px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15pt;
+}
+
+.pop-layer17 .div-body .btn-layerSave{
+	font-weight: bold;
+	font-size: 15pt;	
+}
+
+.pop-layer17 .div-footer{
+	height: 30%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer17 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer17 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer17 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer17 .dimBg17 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer17 .pop-layer17 {
+  display: block;
+}
+
+/* 반품 판매내역조회 */
+.pop-layer18 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 500px;
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer18 .div-header{
+	height: 20%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	text-align:left;
+	-background-color: bisque;
+}
+
+.pop-layer18 .div-body{
+	width: 100%;
+	height: 70%;
+	padding: 0px;
+	margin: 0px;
+	-border: 1px solid #78909C;
+}
+
+.pop-layer18 .div-footer{
+	height: 10%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer18 .pop-container {
+	width: 100%;
+	height: 100%;	
+}
+
+.pop-layer18 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer18 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer18 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.dim-layer18 .dimBg18 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer18 .pop-layer18 {
+  display: block;
+}
+
+/*통합고객조회 팝업 */
+.pop-layer19 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 180px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 10;
+}
+
+.pop-layer19 .div-header{
+	height: 20%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	text-align:left;
+	-background-color: bisque;
+}
+
+.pop-layer19 .div-body{
+	width: 100%;
+	height: 60%;
+	padding: 0px;
+	margin: 0px;
+	-border: 1px solid #78909C;
+}
+
+.pop-layer19 .div-footer{
+	height: 20%;
+	-background-color: aqua;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer19 .pop-container {
+	width: 100%;
+	height: 100%;	
+}
+
+.pop-layer19 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer19 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer19 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.dim-layer19 .dimBg19 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer19 .pop-layer19 {
+  display: block;
+}
+
+/* 현금영수증 용도선택 */
+.pop-layer20 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 150px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 5px solid #B9F6CA;
+  z-index: 15;
+}
+
+.pop-layer20 .div-header{
+	height: 15%;
+	font-weight: bold;
+	font-size: 13pt;
+	padding: 0px;
+	margin: 0px;
+	-background-color: bisque;
+}
+
+.pop-layer20 .div-body{
+	height: 60%;
+}
+
+.pop-layer20 .div-footer{
+	height: 25%;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pop-layer20 .pop-container{
+	width: 100%;
+	height: 100%;
+}
+
+.pop-layer20 p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer20 .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.dim-layer20 {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.dim-layer20 .dimBg20 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer20 .pop-layer20 {
+  display: block;
+}

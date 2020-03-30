@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--#include virtual="/sang/include/xinc/design.asp"-->
+<!--#include virtual="/sang/include/common.asp"-->
+
+<html>
+<head>
+	<script src="../../include/js/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+  
+  <div id="jsGrid"></div>
+  
+	
+	<script>
+
+var db = {
+            loadData: function () {
+            },
+            insertItem: function (data) {                
+                this.orders.push(data);
+            },
+            updateItem: function (Client) {
+                UpdateOrderItem(Client)        
+            },
+            deleteItem: function (deletingClient) {
+                RemoveOrderItem(deletingClient.TenSP);                
+            }
+        };
+
+        window.db = db;
+        db.orders = [];
+        db.arrProduct = [];
+        db.arrDonHang = [];
+
+        function RemoveOrderItem(id) {
+            for (var i = 0; i < this.db.orders.length; i++) {
+                if (this.db.orders[i].IdProduct == id) {
+                    this.db.orders.splice(i, 1);
+                }
+            }
+        }
+
+        function UpdateOrderItem(ClientObj) {
+            var tempVAT = 0
+            var TempTotal = 0;            
+            tempVAT = parseInt(ClientObj.VAT);
+            var temp = ClientObj.Quantity * ClientObj.Price;
+            var TienVAT = ClientObj.Quantity * ClientObj.Price * tempVAT / 100;
+            TempTotal = temp + TienVAT;
+            ClientObj.Total = TempTotal;
+            
+            for (var i = 0; i < this.db.orders.length; i++) {
+                if (this.db.orders[i].IdProduct == ClientObj.IdProduct) {
+                    this.db.orders[i].Quantity = parseInt(ClientObj.Quantity);
+                    this.db.orders[i].Price = parseInt(ClientObj.Price);
+                    this.db.orders[i].VAT = ClientObj.VAT;
+                    this.db.orders[i].Total = parseInt(ClientObj.Total);
+                    console.log("tongtien UPDATED " + this.db.orders[i].Total);
+                    console.log(this.db.orders[i]);
+                }
+            }         
+            }        
+
+            function configGrid() {
+                $("#jsGrid").jsGrid({
+                    height: "800px",
+                    width: "100%",
+                    inserting: true,
+                    
+                    editing: true,                    
+                    autoload: true,
+                    pageSize: 15,
+                    pageButtonCount: 5,
+                    deleteConfirm: function (item) {
+                        return "Bạn có muốn xóa dòng dữ liệu hiện hành không ?";
+                    },
+                    controller: db,
+                    fields: [
+                    { name: "Number", type: "number", width: 22,
+                    	editTemplate: function(value) {
+          var $result = jsGrid.fields.number.prototype.editTemplate.call(this, value);
+          $result.on("keydown", function(e) {
+            if(e.which === 13) {
+                $("#jsGrid").jsGrid("updateItem");
+                return false;
+            }
+          });
+          return $result;
+        }
+                    },
+                    { name: "IdProduct", type: "text", width: 22,
+                    editTemplate: function(value) {
+          var $result = jsGrid.fields.text.prototype.editTemplate.call(this, value);
+          $result.on("keydown", function(e) {
+            if(e.which === 13) {
+                $("#jsGrid").jsGrid("updateItem");
+                return false;
+            }
+          });
+          return $result;
+        }
+                    },
+                    { name: "Quantity", type: "number", width: 40, title: "Quantity" },
+                    { name: "Price", type: "number", width: 30, title: "Price" },
+                    { name: "VAT", type: "number", width: 30,title: "VAT" },
+                    { name: "Total", type: "number", width: 50, title: "Total" },
+                    {
+                        type: "control",
+                        modeSwitchButton: false,
+                        editButton: false,
+                    }
+                    ]
+                });
+            }
+
+            function additem(){
+                var client = {
+                		IdProduct:1,
+                    Number: 10,
+                    Quantity: 1022,      
+                    Price: 500,
+                    VAT: 10,
+                    Total: 10000,
+                };
+                $("#jsGrid").jsGrid("insertItem", client);
+            }
+
+            $(document).ready(function () {
+                configGrid();
+                additem();
+            });
+
+
+
+	</script>
+
+
+</body>
+</html>
